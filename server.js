@@ -1,4 +1,6 @@
 require('dotenv').config();
+console.log('PORT recu:', process.env.PORT);
+console.log('Demarrage serveur...');
 const express = require('express');
 const cors = require('cors');
 const session = require('express-session');
