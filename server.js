@@ -406,4 +406,5 @@ app.delete('/api/events/:memberId/:eventId', async (req, res) => {
   } catch(e) { res.status(500).json({ error: e.message }); }
 });
 
-app.listen(3000, () => console.log('Serveur demarre sur http://localhost:3000'));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log('Serveur demarre sur le port ' + PORT));
